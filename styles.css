@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0; /* Light text for contrast */
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  color: #ffffff; /* White text for title */
+}
+
+h2 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #aaaaaa; /* Lighter gray for subheading */
+}
+
+h3 {
+  color: gold; /* Luxurious gold color for section headers */
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+section {
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+p {
+  color: #e0e0e0; /* Soft light gray text for paragraphs */
+  font-size: 1.1rem;
+}
+
+footer {
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Link Button Styling with Hover Effect */
+a.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  background-color: #2b2b2b; /* Dark button color */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.3s ease; /* Smooth transition for effects */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+a.btn:hover {
+  background-color: #444; /* Lighter background on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+/* Hover Effects for Icons (for the logo or any other icons) */
+.powerbi-embed iframe {
+  border: none;
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.powerbi-embed iframe:hover {
+  transform: scale(1.05); /* Slight zoom-in effect */
+}
+
+/* Optional: Add a luxury gold border effect for sections */
+section {
+  border-left: 3px solid gold;
+  padding-left: 1rem;
+}
+
+h3 {
+  text-transform: uppercase; /* Add some flair */
+  font-weight: bold;
+}
