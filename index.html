@@ -4,13 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Stephanie Martinez | Operations & Reporting Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 
   <style>
+    :root {
+      --bg: #1e1f23;
+      --card-bg: #2a2c31;
+      --text: #f0f0f0;
+      --muted: #b0b0b0;
+      --accent: #00bfa6;
+      --accent-hover: #00a793;
+    }
+
     body {
       font-family: 'Poppins', sans-serif;
-      background-color: #f9fafb;
-      color: #2c3e50;
+      background-color: var(--bg);
+      color: var(--text);
       margin: 0;
       padding: 2rem;
       line-height: 1.6;
@@ -18,37 +27,37 @@
 
     header {
       text-align: center;
-      margin-bottom: 2rem;
+      margin-bottom: 2.5rem;
     }
 
     header h1 {
       font-size: 2.4rem;
       font-weight: 600;
-      color: #1e3a5f;
+      color: var(--accent);
       margin-bottom: 0.5rem;
     }
 
     header p {
       font-size: 1.1rem;
-      color: #555;
+      color: var(--muted);
     }
 
     section {
-      background-color: #ffffff;
+      background-color: var(--card-bg);
       padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
       margin-bottom: 2rem;
     }
 
     h2 {
       font-size: 1.5rem;
-      color: #1e3a5f;
+      color: var(--accent);
       margin-bottom: 1rem;
     }
 
     iframe {
-      border: 1px solid #ccc;
+      border: 1px solid #444;
       border-radius: 8px;
       width: 100%;
       height: 600px;
@@ -56,7 +65,7 @@
     }
 
     a {
-      color: #1e3a5f;
+      color: var(--accent);
       text-decoration: none;
       font-weight: 500;
     }
@@ -67,26 +76,37 @@
 
     .cta-button {
       display: inline-block;
-      background-color: #1e3a5f;
-      color: #fff;
+      background-color: var(--accent);
+      color: #0e0e0e;
       padding: 0.6rem 1.2rem;
       margin-top: 1rem;
-      border-radius: 5px;
+      border-radius: 6px;
       font-weight: 600;
       text-decoration: none;
-      box-shadow: 0 2px 5px rgba(30, 58, 95, 0.2);
+      transition: background-color 0.3s ease;
     }
 
     .cta-button:hover {
-      background-color: #163354;
+      background-color: var(--accent-hover);
     }
 
     footer {
       text-align: center;
       font-size: 0.9rem;
-      color: #888;
-      border-top: 1px solid #e0e0e0;
-      padding-top: 1rem;
+      color: var(--muted);
+      border-top: 1px solid #333;
+      padding-top: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 1rem;
+      }
+
+      header h1 {
+        font-size: 1.8rem;
+      }
     }
   </style>
 </head>
